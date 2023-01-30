@@ -5,7 +5,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
  // const ul = document.querySelector("ul");
   const pokemonCount = 10;
-const endpoint = `https://pokeapi.co/api/v2/pokemon?limit=${pokemonCount}`;
+const endpoint = `https://pokeapi.co/docs/v2#pokemon?limit=${pokemonCount}`;
 
 const displayPokemon = (pokemonList) => {
   const list = document.createElement('ul');
