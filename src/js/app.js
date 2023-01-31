@@ -6,14 +6,12 @@ window.addEventListener("DOMContentLoaded", () => {
   const pokemonCount = 10;
  const ul = document.querySelector("ul");
 
-fetch(`https://pokeapi.co/docs/v2#pokemon?limit=${pokemonCount})
+fetch(`https://pokeapi.co/docs/v2#pokemon?limit=${pokemonCount}`)
   .then((response) => response.json())
   .then((data) => {
-    data.results.forEach))pokemon=>{
+    data.results.forEach(pokemon=>{
     let li=document.createElement('li');
-    li.innerText=pokemon.name
-    ul.appendChild(li)
-  
-  });
-  });
+    li.innerText=pokemon.name;
+    ul.appendChild(li);
+    }});
 });
