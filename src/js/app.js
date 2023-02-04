@@ -6,6 +6,7 @@ window.addEventListener("DOMContentLoaded", () => {
  // const pokemonCount = 10;
  //const ul = document.querySelector("ul");
 
+
 //fetch(`https://pokeapi.co/docs/v2#pokemon?limit=${pokemonCount}`)
  // .then((response) => response.json())
   //.then((data) => {
@@ -41,5 +42,6 @@ window.addEventListener("DOMContentLoaded", () => {
         newLi.innerHTML = result.name;
         ul.appendChild(newLi);
       });
+
     });
 });
